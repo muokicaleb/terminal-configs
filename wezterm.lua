@@ -1,0 +1,1 @@
+/Users/muoki/.config/wezterm/wezterm.lua

@@ -1,0 +1,1 @@
+/Users/muoki/.p10k.zsh
