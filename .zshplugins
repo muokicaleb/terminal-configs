@@ -96,7 +96,7 @@ alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gcl='git clone --recurse-submodules'
 alias ggl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
-alias gpp='git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias ggp='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gst='git status'
 
 # ########################################## End git ##########################################
