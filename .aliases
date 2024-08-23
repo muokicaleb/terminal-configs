@@ -1,0 +1,7 @@
+alias tfsrm="terraform state rm"
+alias tfiu="terraform init -upgrade"
+alias tfat="terraform apply --target="
+alias hgrep="history | grep "
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias wtfip="curl https://wtfismyip.com/json"
+alias cat="bat"
