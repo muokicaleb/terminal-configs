@@ -50,5 +50,4 @@ eval "$(rbenv init - zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export CLICOLOR=1
-export PATH=~/usr/bin:/bin:/usr/sbin:/sbin:$PATH
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
