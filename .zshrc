@@ -17,6 +17,10 @@ if [ -f ~/.workvars ]; then
     source ~/.workvars
 fi
 
+if [ -f ~/.exporta ]; then
+    source ~/.exporta
+fi
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -34,12 +38,6 @@ export PATH="/Users/muoki/bin:/Applications/Sublime Text.app/Contents/SharedSupp
 # bun completions
 [ -s "/Users/muoki/.bun/_bun" ] && source "/Users/muoki/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
 source '/opt/homebrew/opt/autoenv/activate.sh'
 
 
