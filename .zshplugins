@@ -100,3 +100,14 @@ alias ggp='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gst='git status'
 
 # ########################################## End git ##########################################
+
+# ########################################## terraform ##########################################
+
+alias tfa="terraform apply"
+alias tfat="terraform apply --target="
+alias tfi="terraform init -upgrade"
+alias tfiu="terraform init -upgrade"
+alias tfp="terraform plan"
+alias tfsrm="terraform state rm"
+
+# ########################################## End terraform ######################################
