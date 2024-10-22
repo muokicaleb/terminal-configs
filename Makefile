@@ -22,7 +22,7 @@ backup: clean
 	cp ~/.zshrc .
 	cp $(WEZTERM_CONFIG) wezterm.lua
 	cp ~/.aliases .
-	ga . && gc -m "Backup" && ggp
+	git add . && gc -m "Backup" && ggp
 
 restore:
 	cp wezterm.lua $(WEZTERM_CONFIG)

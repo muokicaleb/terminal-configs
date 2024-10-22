@@ -90,7 +90,7 @@ alias kdelsa="kubectl delete sa"
 # ########################################## End Kubectl ##########################################
 
 # ########################################## git ##########################################
-alias ga='git add'
+alias ga='git add '
 alias gc='git commit --verbose'
 alias gco='git checkout'
 alias gcb='git checkout -b'

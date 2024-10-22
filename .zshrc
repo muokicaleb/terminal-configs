@@ -17,8 +17,8 @@ if [ -f ~/.workvars ]; then
     source ~/.workvars
 fi
 
-if [ -f ~/.exporta ]; then
-    source ~/.exporta
+if [ -f ~/.exports ]; then
+    source ~/.exports
 fi
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
