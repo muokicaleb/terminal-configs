@@ -24,8 +24,7 @@ backup: clean
 	cp ~/.aliases .
 	git add . && git commit -m "Backup" && git push
 
-restore:
-    git pull
+restore: 
 	cp wezterm.lua $(WEZTERM_CONFIG)
 	cp .p10k.zsh ~/.p10k.zsh
 	cp .zshplugins ~/.zshplugins
