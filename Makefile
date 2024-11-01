@@ -12,6 +12,8 @@ clean:
 
 install:
 	@brew install --cask wezterm
+	@brew install --cask font-meslo-lg-nerd-font
+	@mkdir -p ~/.config/wezterm/
 	@git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 	@brew install eza zsh-completions zsh-syntax-highlighting zsh-autosuggestions fzf zoxide neovim
 	@git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
