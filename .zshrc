@@ -49,3 +49,6 @@ eval "$(rbenv init - zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export CLICOLOR=1
 
+## direnv
+
+eval "$(direnv hook zsh)"
