@@ -52,3 +52,4 @@ export CLICOLOR=1
 ## direnv
 
 eval "$(direnv hook zsh)"
+
