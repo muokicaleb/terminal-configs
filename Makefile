@@ -11,12 +11,13 @@ clean:
 	rm -f $(FILES)
 
 install:
-	@brew install --cask wezterm
-	@brew install --cask font-meslo-lg-nerd-font
+	@brew install --cask wezterm font-meslo-lg-nerd-font
 	@mkdir -p ~/.config/wezterm/
-	@git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+	@git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k2
 	@brew install eza zsh-completions zsh-syntax-highlighting zsh-autosuggestions fzf zoxide neovim direnv
-	@git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+	@mv ~/.config/nvim{,.bak}
+	@git clone https://github.com/LazyVim/starter ~/.config/nvim && rm -rf ~/.config/nvim/.git
+	@cp ./toggleterm.lua ~/.config/nvim/lua/plugins/toggleterm.lua 
 
 backup: clean
 	cp ~/.p10k.zsh .
