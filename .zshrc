@@ -35,15 +35,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/muoki/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/usr/local/go/bin:$PATH"
 
 
-# bun completions
-[ -s "/Users/muoki/.bun/_bun" ] && source "/Users/muoki/.bun/_bun"
-
-source '/opt/homebrew/opt/autoenv/activate.sh'
-
-
 eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
-eval "$(rbenv init - zsh)"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -53,3 +47,4 @@ export CLICOLOR=1
 
 eval "$(direnv hook zsh)"
 
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

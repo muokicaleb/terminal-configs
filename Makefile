@@ -23,7 +23,7 @@ backup: clean
 	cp ~/.p10k.zsh .
 	cp ~/.zshplugins .
 	cp ~/.zshrc .
-	cp $(WEZTERM_CONFIG) wezterm.lua
+	cp ~/.config/wezterm/*.lua .
 	cp ~/.aliases .
 	git add . && git commit -m "Backup" && git push
 
