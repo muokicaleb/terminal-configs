@@ -48,3 +48,37 @@ export CLICOLOR=1
 eval "$(direnv hook zsh)"
 
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+encrypt_with_kms() {
+    if [[ $# -ne 3 ]]; then
+        echo "Usage: encrypt_with_kms <region> <key-id> <plaintext>"
+        return 1
+    fi
+
+    local region="$1"
+    local key_id="$2"
+    local plaintext="$3"
+
+    aws kms encrypt --region "$region" \
+        --key-id "$key_id" \
+        --plaintext "$(echo -n "$plaintext" | base64)" \
+        --output text \
+        --query CiphertextBlob
+}
+
+decrypt_with_kms() {
+    if [[ $# -ne 3 ]]; then
+        echo "Usage: decrypt_with_kms <region> <key-id> <ciphertext>"
+        return 1
+    fi
+
+    local region="$1"
+    local key_id="$2"
+    local ciphertext="$3"
+
+    aws kms decrypt --region "$region" \
+        --key-id "$key_id" \
+        --ciphertext-blob "$ciphertext" \
+        --output text \
+        --query Plaintext | base64 -d
+}
