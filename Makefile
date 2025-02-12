@@ -28,7 +28,7 @@ backup: clean
 	git add . && git commit -m "Backup" && git push
 
 restore: 
-	cp *.lua cp ~/.config/wezterm/
+	cp *.lua ~/.config/wezterm/
 	cp .p10k.zsh ~/.p10k.zsh
 	cp .zshplugins ~/.zshplugins
 	cp .zshrc ~/.zshrc
