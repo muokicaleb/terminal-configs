@@ -82,3 +82,10 @@ decrypt_with_kms() {
         --output text \
         --query Plaintext | base64 -d
 }
+
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+. '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
