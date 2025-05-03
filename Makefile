@@ -13,7 +13,7 @@ clean:
 install:
 	@brew install --cask wezterm font-meslo-lg-nerd-font
 	@mkdir -p ~/.config/wezterm/
-	@git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k2
+	@git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 	@brew install eza zsh-completions zsh-syntax-highlighting zsh-autosuggestions fzf zoxide neovim direnv
 	@mv ~/.config/nvim{,.bak}
 	@git clone https://github.com/LazyVim/starter ~/.config/nvim && rm -rf ~/.config/nvim/.git
