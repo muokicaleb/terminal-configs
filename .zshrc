@@ -91,3 +91,10 @@ fi
 # End Nix
 
 eval "$(~/.local/bin/mise activate zsh)"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+export PATH="/opt/homebrew/opt/mysql@8.4/bin:$PATH"
+
+eval "$(/Users/calebmuoki/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
