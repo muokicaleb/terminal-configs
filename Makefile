@@ -25,7 +25,7 @@ backup: clean
 	cp ~/.zshrc .
 	cp ~/.config/wezterm/*.lua .
 	cp ~/.aliases .
-	git add . && git commit -m "Backup" && git push
+	git add . && git commit -m "Backup"
 
 restore: 
 	cp *.lua ~/.config/wezterm/
