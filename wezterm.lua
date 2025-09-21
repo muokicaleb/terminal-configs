@@ -27,6 +27,8 @@ config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 1
 config.macos_window_background_blur = 10
+config.enable_scroll_bar = true
+config.scrollback_lines = 3500
 
 -- Key bindings
 config.keys = {
